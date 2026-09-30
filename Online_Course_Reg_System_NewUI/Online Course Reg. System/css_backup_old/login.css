@@ -1,0 +1,314 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* =========================
+   LEFT INFORMATION PANEL
+========================= */
+
+.auth-info {
+    width: 45%;
+    background: #1d4ed8;
+    color: white;
+    padding: 45px 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auth-logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info-content {
+    max-width: 480px;
+}
+
+.info-content .small-title {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.info-content p:not(.small-title) {
+    color: #dbe7ff;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.info-footer {
+    font-size: 13px;
+    color: #c8d8ff;
+}
+
+/* =========================
+   FORM AREA
+========================= */
+
+.auth-form-container {
+    width: 55%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.form-description {
+    color: #737d8d;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d5dbe5;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.08);
+}
+
+/* =========================
+   PASSWORD
+========================= */
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-label a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    padding-right: 45px;
+}
+
+.password-input button {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.remember,
+.terms {
+    margin-bottom: 20px;
+
+    color: #687386;
+
+    font-size: 13px;
+}
+
+.remember input,
+.terms input {
+    margin-right: 6px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.auth-button {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #1d4ed8;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.auth-button:hover {
+    background: #1640b5;
+}
+
+/* =========================
+   SWITCH LOGIN/REGISTER
+========================= */
+
+.switch-auth {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #737d8d;
+
+    font-size: 14px;
+}
+
+.switch-auth a {
+    color: #1d4ed8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-home {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #687386;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.back-home:hover {
+    color: #1d4ed8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-info {
+        width: 100%;
+        min-height: 280px;
+
+        padding: 30px 7%;
+    }
+
+    .info-content h1 {
+        font-size: 34px;
+    }
+
+    .info-footer {
+        display: none;
+    }
+
+    .auth-form-container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .auth-form {
+        padding: 25px 20px;
+    }
+
+    .auth-info {
+        min-height: 240px;
+    }
+
+    .info-content h1 {
+        font-size: 30px;
+    }
+}

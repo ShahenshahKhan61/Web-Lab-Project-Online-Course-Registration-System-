@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - UniCourse</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<section class="brand-side">
+    <div class="logo"><i>🎓</i> UniCourse</div>
+    <div class="pitch">
+        <h1>Smarter course registration for every campus.</h1>
+        <p>Browse courses, manage sections and track registrations, all in one simple, beautiful place.</p>
+        <div class="chips"><span>📚 Live courses</span><span>⚡ Instant enrollment</span><span>🔒 Secure access</span></div>
+    </div>
+    <small>© 2026 UniCourse</small>
+</section>
+
+<section class="form-side">
+    <div class="card">
+        <h2>Welcome back 👋</h2>
+        <p class="sub">Login to manage your university courses</p>
+
+        <form id="loginForm" action="login.php" method="POST">
+            <div class="field">
+                <label for="role">Login As</label>
+                <select id="role" name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="coordinator">Coordinator</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="alt">
+            <div>New Student? <a href="register.html">Create Student Account</a></div>
+            <div>New Teacher? <a href="teacher_register.html">Create Teacher Account</a></div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
